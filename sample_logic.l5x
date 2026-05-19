@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0">
+    <Controller Name="PLCInsight_Demo">
+        <Tags>
+            <Tag Name="Motor_Run" TagType="Base" DataType="BOOL" />
+            <Tag Name="Start_PB" TagType="Base" DataType="BOOL" />
+            <Tag Name="Stop_PB" TagType="Base" DataType="BOOL" />
+        </Tags>
+        <Programs>
+            <Program Name="MainProgram">
+                <Routines>
+                    <Routine Name="MainRoutine" Type="RLL">
+                        <Rung Number="0" Type="N">
+                            <Text>XIC(Start_PB)XIO(Stop_PB)OTE(Motor_Run);</Text>
+                        </Rung>
+                    </Routine>
+                </Routines>
+            </Program>
+        </Programs>
+    </Controller>
+</RSLogix5000Content>

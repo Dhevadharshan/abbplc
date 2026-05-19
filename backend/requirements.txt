@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+openai
+firebase-admin
+python-multipart
+pydantic
+python-dotenv
+pandas
+openpyxl
+jinja2
+python-jose[cryptography]
+passlib[bcrypt]
